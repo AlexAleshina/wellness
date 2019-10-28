@@ -76,7 +76,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:5000'] // <== this will be the URL of our React app (it will be running on port 3000)
+  origin: ['http://localhost:3000'] // <== this will be the URL of our React app (it will be running on port 3000)
 }));
 
 
@@ -84,6 +84,16 @@ app.use(cors({
 
 const authRoutes = require('./routes/auth');
 app.use('/', authRoutes);
+
+const places = require('./routes/places');
+app.use('/', places);
+
+const workout = require('./routes/workouts');
+app.use('/', workout);
+
+const exercises = require('./routes/exercises');
+app.use('/', exercises);
+
 
 // const exercisesPage = require('./routes/exercises');
 // app.use('/', exercisesPage);

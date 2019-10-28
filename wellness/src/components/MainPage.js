@@ -6,8 +6,9 @@ class MainPage extends Component {
     render() {
         return (
             <div>
-                <Link to='/login'>Login</Link>
-                <Link to='/workouts'>Start</Link>
+                <Link to="/login">Login</Link>
+                <Link to="/workouts">Start</Link>
+                <img src = "mainBackground/image.png" alt="main photo"></img>
             </div>
         )
     }
