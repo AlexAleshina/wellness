@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Watch from './ReactStopwatch';
-import './Start.css'
+import './StartPage.css'
 import Chart from './canvasjs.react';
 // import * as CanvasJSReact from './canvasjs.react';
 // //var CanvasJSReact = require('./canvasjs.react');

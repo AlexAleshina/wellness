@@ -10,7 +10,7 @@ import AuthService from './components/auth/auth-service';
 import Login from './components/auth/Login';
 import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
-import Start from './components/Start';
+import StartPage from './components/StartPage';
 
 
 class App extends Component {
@@ -74,7 +74,7 @@ class App extends Component {
               <Route exact path="/workout/place/:placeId" component={WorkoutPage}/>
               {/* <Route exact path="/exercises" component={ExercisesPage} /> */}
               <Route exact path="/workout/:workoutId" component={ExercisesPage}/>
-              <Route exact path="/start" component={Start}/>
+              <Route exact path="/start" component={StartPage}/>
               <Redirect path="*" to="/places" />
             </Switch>
           </div>
