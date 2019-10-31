@@ -1,0 +1,86 @@
+.exerciseImg{
+    width:81px;
+    height: 76px;
+    border-radius: 6px;
+}
+.paddingForExercises{
+    padding-top: 100px;
+    margin: 15px;
+}
+.exerciseP{
+    font-family: Roboto;
+    font-size: 16px;
+    color: white;
+    margin: 0px;
+    padding: 0;
+}
+
+.exerciseFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #1a1c1d;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.exerciseSpan{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #848585;
+}
+
+.icons{
+    width:30px;
+}
+
+.popup {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /* background: #0a0c0d; */
+    background: #1a1c1d;
+    color: white;
+    padding: 20px;
+    z-index: 10;
+    overflow-y: scroll;
+}
+
+.flexPopup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.ImgPopup {
+    width: 100%;
+    border-radius: 15px;
+}
+.nameforHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonPopup{
+    width: 100%;
+    height: 53px;
+    border-radius: 6px;
+    background-color: rgba(255, 59, 1, 1);
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    font-size: 20px;
+}

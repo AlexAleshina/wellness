@@ -1,0 +1,23 @@
+.placeContainer{
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+}
+.placeImg{
+    margin: 30px;
+    width:350px;
+    height:150px;
+    border-radius: 6px;
+}
+h1{
+  width: 207px;
+  height: 24px;
+  font-family: Montserrat;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: white;
+}
+

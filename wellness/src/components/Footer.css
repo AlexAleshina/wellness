@@ -1,0 +1,22 @@
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footerImg{
+    width:35px;
+}
+
+.elementP{
+    font-size: 10px;
+    color:#7b7e80;
+    font-family: Roboto;
+    margin: 0;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}

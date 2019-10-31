@@ -1,0 +1,74 @@
+
+.startContainer{
+    font-family: Roboto;
+}
+
+.startImg{
+    width:100%;
+}
+
+.duration{
+    color:#848585;
+    margin: 10px;
+    padding: 0;
+}
+
+.watchColor{
+
+    color:white;
+    width: 164px;
+    height: 49px;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.67px;
+    margin: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.startTable{
+    margin: 20px;
+    color:#848585;
+    width:90%;
+    border-collapse: collapse;
+
+}
+
+tr,td{
+    height: 40px;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    border-bottom: 1px #1a1c1d solid;
+}
+th{
+    height: 40px;
+    font-size: 20px;
+    color:#848585;
+    text-align: center;
+    border-bottom: 1px #1a1c1d solid;
+    font-weight: normal;
+}
+
+td input{
+    background-color:#0a0c0d;
+    border: none;
+    width: 64px;
+    height: 36px;
+    color: white;
+    border-radius: 2px;
+    font-size: 20px;
+}
+.checkRound{
+    width:20px;
+    background-color: #ff3b01;
+}
+
+td input:focus{
+    
+    background-color: rgba(155, 155, 155, 0.4);
+}

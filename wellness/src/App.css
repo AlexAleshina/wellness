@@ -1,1 +1,14 @@
+body{
+    padding:0;
+    margin:0;
+    background-color:#0a0c0d;
+}
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #0a0c0d;
+    padding: 15px;
+}

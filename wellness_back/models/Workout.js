@@ -10,7 +10,8 @@ const workoutSchema = new Schema(
         where: { 
             type: mongoose.Schema.Types.ObjectId, 
             ref: 'place'
-        }
+        },
+        exercises: [{type: mongoose.Schema.Types.ObjectId, ref: 'exercises'}]
     },
 );
 

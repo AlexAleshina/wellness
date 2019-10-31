@@ -1,0 +1,67 @@
+.workoutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+}
+.empty{
+    color: #0a0c0d
+}
+.flexForHeader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #0a0c0d;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elemContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1a1c1d;
+}
+.workoutImg{
+    width:117px;
+    height: 102px;
+    border-radius: 6px;
+}
+.nameContainer h2{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.nameContainer span{
+    color: #8d9092;
+    font-size: 14px;
+}
+.workoutContainer>a{
+    text-decoration: none;
+    width: 100vw;
+}
+
+.thumbnailContaner {
+    position: relative;
+}
+
+.thumbnailContaner span {
+    font-family: Roboto;
+    font-size: 20px;
+    top: 40px;
+    position: absolute;
+    left: 0;
+    color: white;
+    right: 0;
+    text-align: center;
+}

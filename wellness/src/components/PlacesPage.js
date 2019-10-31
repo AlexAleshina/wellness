@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+import './PlacePage.css';
 
 class PlacesPage extends Component {
     constructor(props) {
@@ -40,16 +42,21 @@ class PlacesPage extends Component {
             return <div>loading...</div>;
         } else {
             return (
-                <ul>
-                    <a href="whereId">
-                        {places.map(item => (
-                            <li key={item._id}>
-                                {item.name}
-                                <img src={item.img_url} alt="place"></img>
-                            </li>
-                        ))}
-                    </a>
-                </ul>
+
+                <div className="placeContainer">
+
+                    {places.map(item => (
+                        <Link to={`/workout/place/${item._id}`}>
+                            <div key={item._id}>
+                                {/* {item.name} */}
+                                <img className="placeImg" src={item.img_url} alt="place"></img>
+                            </div>
+                        </Link>
+                    ))}
+                    {/*                     
+                    <h1>PLACES</h1> */}
+
+                </div>
             );
         }
     }

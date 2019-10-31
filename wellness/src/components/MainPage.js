@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './MainPage.css';
+
 
 class MainPage extends Component {
 
     render() {
         return (
-            <div>
-                <Link to="/login">Login</Link>
-                <Link to="/workouts">Start</Link>
-                <img src = "mainBackground/image.png" alt="main photo"></img>
+            <div className="mainConteiner">
+                <div><h1>FITNESS ACT</h1></div>
+                <div>
+                    <div className="started"><Link to="/signup">GET STARTED</Link></div>
+                    <div className="login"><Link to="/login">LOGIN</Link></div>
+                </div>
+
+
             </div>
         )
     }

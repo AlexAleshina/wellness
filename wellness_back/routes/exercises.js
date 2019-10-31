@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Exercise = require("../models/Exercise");
+const Exercises = require("../models/Exercise");
 
 
 router.get('/exercises', (req, res, next) => {
@@ -16,9 +16,9 @@ router.get('/exercises', (req, res, next) => {
     //         return;
     //     }
     // })
-    Exercise.find({})
-        .then((exercise) => {
-            res.status(200).json({ exercise })
+    Exercises.find({})
+        .then((exercises) => {
+            res.status(200).json({ exercises })
         })
         .catch((err) => {
             res.status(500).json(err)
