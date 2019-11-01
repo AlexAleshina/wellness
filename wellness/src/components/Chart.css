@@ -1,0 +1,41 @@
+.mainContainerChart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+}
+
+.flexChart{
+    margin:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flexChart h1{
+    
+}
+
+.listOfExercises{
+    margin:20px;
+    width: 90vw;
+    border: 2px solid #ff3b01;
+    background-color: #0a0c0d;
+    border-radius: 6px;
+    height: 50px;
+    color: #ff3b01;
+    font-size: 1em;
+    font-family: Roboto;
+    padding-left: 15px;
+    text-align: start;
+}
+
+.chart{
+    display: block;
+    height: 100vh;
+    width: 95vw;
+    margin-bottom: 200px;
+}

@@ -13,6 +13,16 @@
     padding: 0;
 }
 
+.submit{
+    background-color: #0a0c0d;
+    border: 2px solid #ff3b01;
+    border-radius: 6px;
+    width: 20vw;
+    color: #ff3b01;
+    height: 5vh;
+    margin: 15px;
+    font-size: 1.3em;
+}
 .watchColor{
 
     color:white;
@@ -71,4 +81,8 @@ td input{
 td input:focus{
     
     background-color: rgba(155, 155, 155, 0.4);
+}
+
+.formStart{
+    margin-bottom: 90px;
 }

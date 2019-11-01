@@ -52,7 +52,7 @@ class ExercisePage extends Component {
     componentDidMount() {
         let workoutId = this.props.match.params.workoutId;
         axios
-            .get(`http://localhost:5000/workout/placeId/${workoutId}`)
+            .get(`${process.env.REACT_APP_server}/workout/placeId/${workoutId}`)
             .then(
                 (result) => {
                     this.setState({

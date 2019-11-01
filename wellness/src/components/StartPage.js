@@ -29,7 +29,7 @@ class Start extends Component {
     componentDidMount() {
 
         axios
-            .get(`http://localhost:5000/exercises/${this.getExerciseId()}`, { withCredentials: true })
+            .get(`${process.env.REACT_APP_server}/exercises/${this.getExerciseId()}`, { withCredentials: true })
             .then(
                 (result) => {
                     this.setState({
@@ -69,7 +69,7 @@ class Start extends Component {
         }
 
         axios
-            .post(`http://localhost:5000/results/save`, requestBody, { withCredentials: true })
+            .post(`${process.env.REACT_APP_server}/results/save`, requestBody, { withCredentials: true })
             .then(
                 (result) => {
                     console.log(`Success: ${JSON.stringify(result)}`);
@@ -109,8 +109,8 @@ class Start extends Component {
 
                     {/* <div><Chart /></div> */}
                     {/* <h1>Excercise: {this.props.location.query.exerciseId}</h1> */}
-                    <form onSubmit={e => this.submit(e)}>
-                        <button type="submit">Finish</button>
+                    <form className="formStart" onSubmit={e => this.submit(e)}>
+                        <button className="submit" type="submit">Finish</button>
                         <table className="startTable">
                             <th>Set</th>
                             <th>Weight</th>

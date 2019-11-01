@@ -1,0 +1,21 @@
+{
+  "name": "lastproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./wellness_back/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexAleshina/wellness.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexAleshina/wellness/issues"
+  },
+  "homepage": "https://github.com/AlexAleshina/wellness#readme"
+}

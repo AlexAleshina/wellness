@@ -15,7 +15,7 @@ class PlacesPage extends Component {
 
     componentDidMount() {
         axios
-            .get("http://localhost:5000/places")
+            .get(`${process.env.REACT_APP_server}/places`)
             .then(
                 (result) => {
                     this.setState({

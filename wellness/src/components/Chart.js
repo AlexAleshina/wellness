@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Line } from 'react-chartjs-2';
 import Axios from 'axios';
+import './Chart.css';
 
 function Chart(props) {
 
@@ -9,20 +10,20 @@ function Chart(props) {
 		datasets: [
 			{
 				label: props.exercise_name,
-				fill: false,
+				fill: true,
 				lineTension: 0.1,
-				backgroundColor: 'rgba(75,192,192,0.4)',
-				borderColor: 'rgba(75,192,192,1)',
+				backgroundColor: 'rgba(255, 59, 1, 0.3)',
+				borderColor: 'rgba(255, 59, 1, 1)',
 				borderCapStyle: 'butt',
 				borderDash: [],
 				borderDashOffset: 0.0,
 				borderJoinStyle: 'miter',
-				pointBorderColor: 'rgba(75,192,192,1)',
+				pointBorderColor: 'rgba(255, 59, 1, 0.8)',
 				pointBackgroundColor: '#fff',
-				pointBorderWidth: 1,
-				pointHoverRadius: 5,
-				pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-				pointHoverBorderColor: 'rgba(220,220,220,1)',
+				pointBorderWidth: 3,
+				pointHoverRadius: 10,
+				pointHoverBackgroundColor: 'rgba(255, 59, 1, 0.8)',
+				pointHoverBorderColor: 'rgba(255, 90, 1, 0.8)',
 				pointHoverBorderWidth: 2,
 				pointRadius: 1,
 				pointHitRadius: 10,
@@ -74,13 +75,23 @@ class ChartPage extends Component {
 			}
 
 			return (
-				<div>
-					<form>
-						<select onChange={(e) => this.onExerciseChanged(e)}>
-							{this.state.data.map(ex => <option key={ex.exerciseId} value={ex.exerciseId}>{ex.exercise_name}</option>)}
-						</select>
-					</form>
-					{renderChart()}
+				<div className="mainContainerChart">
+
+					<div className="flexChart">
+						<h1>
+							YOUR PROGRESS
+						</h1>
+						<form>
+							<select className="listOfExercises" onChange={(e) => this.onExerciseChanged(e)}>
+								{this.state.data.map(ex => <option key={ex.exerciseId} value={ex.exerciseId}>{ex.exercise_name}</option>)}
+							</select>
+						</form>
+					</div>
+
+					<div className="chart">
+						{renderChart()}
+					</div>
+
 				</div>
 			)
 		}
@@ -88,7 +99,7 @@ class ChartPage extends Component {
 
 	componentDidMount() {
 
-		Axios.get("http://localhost:5000/results/available", { withCredentials: true })
+		Axios.get(`${process.env.REACT_APP_server}/results/available`, { withCredentials: true })
 			.then(res => {
 				this.setState({
 					data: res.data,

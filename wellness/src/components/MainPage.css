@@ -2,14 +2,16 @@
 body{
     font-family: Roboto;
 } */
-
-h1{
+.divForName{
+    
+}
+.mainH1{
     font-family: Montserrat;
     font-size: 48px;
     letter-spacing: 1px;
     color: #ff3b01;
     font-weight: 500;
-    line-height: 1.46;
+    width: auto;
 }
 /* img{
     width: 100%;

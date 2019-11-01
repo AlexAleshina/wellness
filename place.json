@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5db2d5959788334dfc3bcc13"},"name":"home","img_url":"homePlace/card-gym.png"}
+{"_id":{"$oid":"5db2d5a39788334dfc3bcc14"},"name":"gym","img_url":"gymPlace/card-gym.png"}

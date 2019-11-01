@@ -22,7 +22,7 @@ class Footer extends Component {
                 <Link onClick={this.props.logout}>
                     <div className="footerElementContainer">
                         <img className="footerImg" src='/footer/logout.png' alt='logout'></img>
-                        <p className="elementP">Logout</p>
+                        <p className="elementP">Log out </p>
                     </div>
                 </Link>
             </div>
