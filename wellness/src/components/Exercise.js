@@ -25,7 +25,7 @@ function ExcerciseDetails(props) {
             <p>{props.description}</p>
 
 
-            <Link className="buttonPopup" to="/start">Start</Link>
+            <Link className="buttonPopup" to={`/start-exercise/${props._id}`}>Start</Link>
         </div>
     )
 }

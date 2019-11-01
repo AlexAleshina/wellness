@@ -94,6 +94,9 @@ app.use('/', workout);
 const exercises = require('./routes/exercises');
 app.use('/', exercises);
 
+const results = require('./routes/results');
+app.use('/', results);
+
 
 // const exercisesPage = require('./routes/exercises');
 // app.use('/', exercisesPage);

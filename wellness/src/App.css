@@ -12,3 +12,7 @@ body{
     background: #0a0c0d;
     padding: 15px;
 }
+
+.mainContent {
+    padding-bottom: 90px;
+}

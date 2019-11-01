@@ -11,6 +11,7 @@ import Login from './components/auth/Login';
 import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 import StartPage from './components/StartPage';
+import ChartPage from './components/Chart';
 
 
 class App extends Component {
@@ -74,7 +75,8 @@ class App extends Component {
               <Route exact path="/workout/place/:placeId" component={WorkoutPage}/>
               {/* <Route exact path="/exercises" component={ExercisesPage} /> */}
               <Route exact path="/workout/:workoutId" component={ExercisesPage}/>
-              <Route exact path="/start" component={StartPage}/>
+              <Route exact path="/start-exercise/:id" component={StartPage}/>
+              <Route exact path="/stats" render={() => <ChartPage exerciseId="5db17f019788334dfc3bcc0e" />}/>
               <Redirect path="*" to="/places" />
             </Switch>
           </div>
